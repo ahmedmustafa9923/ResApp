@@ -1,0 +1,40 @@
+body {
+    background-color: #f4f7f6;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.stat-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.status-running {
+    color: #28a745;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.log-window {
+    height: 200px;
+    overflow-y: auto;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #333;
+}
+
+code {
+    display: block;
+    margin-bottom: 5px;
+}
